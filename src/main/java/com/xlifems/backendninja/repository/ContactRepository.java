@@ -10,4 +10,5 @@ import com.xlifems.backendninja.entity.Contact;
 @Repository("contactRepository")
 public interface ContactRepository extends JpaRepository<Contact, Serializable>{
 
+	public abstract Contact findContactById(int id);
 }

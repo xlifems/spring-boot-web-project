@@ -25,9 +25,8 @@ public class Log {
 	@Column(name = "url")
 	private String url;
 		
-	public Log(int id, Date date, String details, String username, String url) {
-		super();
-		this.id = id;
+	public Log( Date date, String details, String username, String url) {
+		super();		
 		this.date = date;
 		this.details = details;
 		this.username = username;

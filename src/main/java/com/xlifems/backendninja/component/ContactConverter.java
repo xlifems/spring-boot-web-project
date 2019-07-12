@@ -5,9 +5,19 @@ import org.springframework.stereotype.Component;
 import com.xlifems.backendninja.entity.Contact;
 import com.xlifems.backendninja.model.ContactModel;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ContactConverter.
+ */
 @Component("contactConverter")
 public class ContactConverter {
 	
+	/**
+	 * Convert to contact model 2 contact.
+	 *
+	 * @param contactModel the contact model
+	 * @return the contact
+	 */
 	public Contact convertToContactModel2Contact(ContactModel contactModel) {
 		Contact contact = new Contact();		
 		contact.setId(contactModel.getId());
@@ -18,6 +28,12 @@ public class ContactConverter {
 		return contact;
 	}
 	
+	/**
+	 * Convert to contact 2 contact model.
+	 *
+	 * @param contact the contact
+	 * @return the contact model
+	 */
 	public ContactModel convertToContact2ContactModel(Contact contact) {
 		ContactModel contactModel = new ContactModel();
 		contactModel.setId(contact.getId());

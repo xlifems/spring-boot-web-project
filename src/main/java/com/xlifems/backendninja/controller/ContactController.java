@@ -76,6 +76,12 @@ public class ContactController {
 		return mav;
 	}
 	
+	/**
+	 * Removes the contact.
+	 *
+	 * @param id the id
+	 * @return the model and view
+	 */
 	@GetMapping("/removecontact")
 	public ModelAndView removeContact(@RequestParam(name = "id", required = true) int id) {
 		contactService.removeContact(id);
